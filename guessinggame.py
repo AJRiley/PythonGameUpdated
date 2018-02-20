@@ -27,4 +27,5 @@ while not win:
     elif guess > number:
         print("Guess Lower")
 if win:
-    print("Winner")
+    print("Congrats, you guessed correctly. The number was indeed {}".format(number))
+    print("it had taken you {} tries".format(tries))
