@@ -17,7 +17,7 @@ if question == "n":
 
 if question == "y":
     print("I'm thinking of a number between 1 & 10")
-while not win:       # win is not true run the while loop, we set win to false at the start therefore this will always run
+while not win:       # while the win is not true, run the while loop. We set win to false at the start therefore this will always run
     guess = int(input("Have a guess: "))
     tries = tries + 1
     if guess == number:
