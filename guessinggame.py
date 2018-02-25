@@ -4,7 +4,7 @@ import random
 
 number = random.randint(1, 10)
 tries = 1
-win = False
+win = False # setting a win flag to false
 
 
 name = input("Hello, What is your username?")
@@ -17,15 +17,15 @@ if question == "n":
 
 if question == "y":
     print("I'm thinking of a number between 1 & 10")
-while not win:
+while not win:       # win is not true run the while loop, we set win to false at the start therefore this will always run
     guess = int(input("Have a guess: "))
     tries = tries + 1
     if guess == number:
-        win = True
+        win = True    # set win to true when the user guesses correctly.
     elif guess < number:
         print("Guess Higher")
     elif guess > number:
         print("Guess Lower")
-if win:
+if win:    # if win is true then output message
     print("Congrats, you guessed correctly. The number was indeed {}".format(number))
     print("it had taken you {} tries".format(tries))
