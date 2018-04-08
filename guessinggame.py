@@ -12,10 +12,10 @@ name = input("Hello, What is your username?")
 print("Hello", name + ".", )
 
 question = input("Would you like to play a game? [Y/N] ")
-if question == "n":
+if question.lower() == "n": #in case of capital letters is entered
     print("oh..okay")
 
-if question == "y":
+if question.lower() == "y":
     print("I'm thinking of a number between 1 & 10")
 while not win:       # while the win is not true, run the while loop. We set win to false at the start therefore this will always run
     guess = int(input("Have a guess: "))
@@ -26,6 +26,6 @@ while not win:       # while the win is not true, run the while loop. We set win
         print("Guess Higher")
     elif guess > number:
         print("Guess Lower")
-if win:    # if win is true then output message
-    print("Congrats, you guessed correctly. The number was indeed {}".format(number))
-    print("it had taken you {} tries".format(tries))
+# if win is true then output message
+print("Congrats, you guessed correctly. The number was indeed {}".format(number))
+print("it had taken you {} tries".format(tries))
