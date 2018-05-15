@@ -3,7 +3,7 @@
 import random
 
 number = random.randint(1, 10)
-tries = 1
+tries = 0
 win = False # setting a win flag to false
 
 
@@ -28,4 +28,4 @@ while not win:       # while the win is not true, run the while loop. We set win
         print("Guess Lower")
 # if win is true then output message
 print("Congrats, you guessed correctly. The number was indeed {}".format(number))
-print("it had taken you {} tries".format(tries-1))
+print("it had taken you {} tries".format(tries))
