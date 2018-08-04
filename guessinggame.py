@@ -9,7 +9,7 @@ win = False # setting a win flag to false
 
 name = input("Hello, What is your username?")
 
-print("Hello", name + ".", )
+print("Hello" + name + "." )
 
 question = input("Would you like to play a game? [Y/N] ")
 if question.lower() == "n": #in case of capital letters is entered
